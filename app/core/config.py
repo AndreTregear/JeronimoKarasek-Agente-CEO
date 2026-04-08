@@ -27,6 +27,13 @@ class Settings(BaseSettings):
 
     STORAGE_BUCKET: str = "media"
 
+    # Local AI services (via SupercomputerReconnect mesh)
+    LLM_API_URL: str = "http://localhost:18080/v1"
+    LLM_API_KEY: str | None = "omnimoney"
+    LLM_MODEL: str = "qwen3.5-122b"
+    ASR_API_URL: str = "http://localhost:18082"
+    TTS_API_URL: str = "http://localhost:18083"
+
     PROXY_SERVER: str | None = None
     PROXY_USERNAME: str | None = None
     PROXY_PASSWORD: str | None = None
